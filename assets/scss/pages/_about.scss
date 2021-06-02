@@ -1,0 +1,61 @@
+.about-hero {
+    max-width: 1236px;
+    margin: 0 auto;
+    .about-hero-content {
+        div {
+            padding: 0;
+        }
+        img {
+            border-radius: 5px;
+        }
+        .about-hero-content-left {
+            padding-right: 30px;
+        }
+        .about-hero-content-right {
+            .about-hero-content-right-top {
+                .about-hero-content-right-top-left {
+                    padding-right: 20px;
+                }
+            }
+            .about-hero-content-right-bottom {
+                padding-top: 20px;
+                .about-hero-content-right-bottom-right {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    .about-hero-statistics {
+        width: 50%;
+        margin: 0 auto;
+        border-bottom: 1px solid var(--foreground-primary-color);
+    }
+}
+
+.about-story-content {
+    text-align: center;
+    margin: 0 auto;
+    .about-story-content-image {
+        display: flex;
+        justify-content: center;
+        img {
+            margin-top: 32px;
+            margin-right: 32px;
+            filter: brightness(0) invert(0.7);
+            max-width: 90px;
+        }
+    }
+}
+
+.about-team {
+    max-width: 1236px;
+    margin: 0 auto;
+    .about-team-member {
+        text-align: left;
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    }
+}

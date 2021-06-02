@@ -1,0 +1,426 @@
+// General Style
+:root {
+    --background-primary-color: #{$light-background-primary-color};
+    --background-secondary-color: #{$light-background-secondary-color};
+    --foreground-primary-color: #{$light-foreground-primary-color};
+    --foreground-secondary-color: #{$light-foreground-secondary-color};
+    --header-shadow-color: #{$light-shadow-color};
+    --border-color: #{$dark-shadow-color};
+    --theme-toggler-ripple-color: #{$light-theme-toggler-ripple-color};
+}
+  
+.dark {
+    --background-primary-color: #{$dark-background-primary-color};
+    --background-secondary-color: #{$dark-background-secondary-color};
+    --foreground-primary-color: #{$dark-foreground-primary-color};
+    --foreground-secondary-color: #{$dark-foreground-secondary-color};
+    --header-shadow-color: #{$dark-shadow-color};
+    --border-color: #{$light-shadow-color};
+    --theme-toggler-ripple-color: #{$dark-theme-toggler-ripple-color};
+}
+
+body {
+    margin: 0px;
+    color: var(--foreground-primary-color);
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--background-primary-color);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+h2 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    margin: 0px;
+    font-family: Inter, sans-serif;
+    line-height: 1.2;
+    color: var(--foreground-primary-color);
+    @media only screen and (max-width: 1279px) {
+        font-size: 3.3333rem;
+    }
+    @media only screen and (max-width: 959px) {
+        font-size: 2.9167rem;
+    }
+    @media only screen and (max-width: 599px) {
+        font-size: 2.375rem;
+    }
+}
+
+h3 {
+    font-size: 2.9991rem;
+    font-weight: bold;
+    margin: 0px;
+    font-family: Inter, sans-serif;
+    line-height: 1.167;
+    color: var(--foreground-primary-color);
+    @media only screen and (max-width: 1279px) {
+        font-size: 2.7849rem;
+    }
+    @media only screen and (max-width: 959px) {
+        font-size: 2.5707rem;
+    }
+    @media only screen and (max-width: 599px) {
+        font-size: 2rem;
+    }
+}
+
+h4 {
+    font-size: 2.0243rem;
+    font-weight: bold;
+    margin: 0px;
+    font-family: Inter, sans-serif;
+    line-height: 1.167;
+    color: var(--foreground-primary-color);
+    @media only screen and (max-width: 959px) {
+        font-size: 1.8219rem;
+    }
+    @media only screen and (max-width: 599px) {
+        font-size: 1.5625rem;
+    }
+}
+
+h5 {
+    font-size: 1.4993rem;
+    font-weight: bold;
+    margin: 0px;
+    font-family: Inter, sans-serif;
+    line-height: 1.334;
+    color: var(--foreground-primary-color);
+    @media only screen and (max-width: 959px) {
+        font-size: 1.3118rem;
+    }
+    @media only screen and (max-width: 599px) {
+        font-size: 1.25rem;
+    }
+}
+
+h6 {
+    font-size: 1.25rem;
+    margin: 0px;
+    font-family: Inter, sans-serif;
+    line-height: 1.6;
+    font-weight: bold;
+    color: var(--foreground-primary-color);
+    @media only screen and (max-width: 599px) {
+        font-size: 1.125rem;
+    }
+}
+
+p {
+    color: var(--foreground-secondary-color);
+    font-weight: 400;
+    font-size: 1rem;
+    @media only screen and (max-width: 599px) {
+        font-size: 1.125rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.webbee-description-snippet {
+    margin-bottom: 32px;
+    width: 100%;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    .webbee-description-snippet-header {
+        margin: 0px 0px 0.35em;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .webbee-description-snippet-title {
+        margin: 0px 0px 0.35em;
+        padding-top: 20px;
+    }
+    .webbee-description-snippet-content {
+        margin: 0px;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
+    .webbee-description-snippet-description {
+        margin: 0px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .webbee-description-snippet-button {
+        margin-top: 24px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+    .webbee-description-snippet-buttons {
+        margin-top: 24px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        @media only screen and (max-width: 992px) {
+            a {
+                width: 50%;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            flex-direction: column;
+            a {
+                width: 100%;
+            }
+        }
+        .webbee-description-snippet-secondary-button {
+            margin-top: 0px;
+            margin-left: 16px;
+            @media only screen and (max-width: 992px) {
+                width: 50%;
+                a {
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 576px) {
+                margin-left: 0;
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+.svg-wrapper-span {
+    padding: 20px 16px;
+    border-radius: 50%;
+}
+
+
+//material outlined textfield
+.pure-material-textfield-outlined {
+    --pure-material-safari-helper1: rgba(var(--pure-material-primary-rgb, 0, 171, 85));
+    position: relative;
+    display: inline-block;
+    padding-top: 6px;
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+/* Input, Textarea */
+.pure-material-textfield-outlined > input,
+.pure-material-textfield-outlined > textarea {
+    box-sizing: border-box;
+    margin: 0;
+    border: solid 1px; /* Safari */
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    border-top-color: transparent;
+    border-radius: 4px;
+    padding: 15px 13px 15px;
+    width: 100%;
+    height: inherit;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    background-color: transparent;
+    box-shadow: none; /* Firefox */
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    caret-color: rgba(var(--pure-material-primary-rgb, 0, 171, 85), 1);
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Span */
+.pure-material-textfield-outlined > input + span,
+.pure-material-textfield-outlined > textarea + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    width: 100%;
+    max-height: 100%;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    font-size: 75%;
+    line-height: 15px;
+    cursor: text;
+    transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+/* Corners */
+.pure-material-textfield-outlined > input + span::before,
+.pure-material-textfield-outlined > input + span::after,
+.pure-material-textfield-outlined > textarea + span::before,
+.pure-material-textfield-outlined > textarea + span::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    margin-top: 6px;
+    border-top: solid 1px;
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    min-width: 10px;
+    height: 8px;
+    pointer-events: none;
+    box-shadow: inset 0 1px transparent;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pure-material-textfield-outlined > input + span::before,
+.pure-material-textfield-outlined > textarea + span::before {
+    margin-right: 4px;
+    border-left: solid 1px transparent;
+    border-radius: 4px 0;
+}
+
+.pure-material-textfield-outlined > input + span::after,
+.pure-material-textfield-outlined > textarea + span::after {
+    flex-grow: 1;
+    margin-left: 4px;
+    border-right: solid 1px transparent;
+    border-radius: 0 4px;
+}
+
+/* Hover */
+.pure-material-textfield-outlined:hover > input,
+.pure-material-textfield-outlined:hover > textarea {
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    border-top-color: transparent;
+}
+
+.pure-material-textfield-outlined:hover > input + span::before,
+.pure-material-textfield-outlined:hover > textarea + span::before,
+.pure-material-textfield-outlined:hover > input + span::after,
+.pure-material-textfield-outlined:hover > textarea + span::after {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+}
+
+.pure-material-textfield-outlined:hover > input:not(:focus):placeholder-shown,
+.pure-material-textfield-outlined:hover > textarea:not(:focus):placeholder-shown {
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+}
+
+/* Placeholder-shown */
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+}
+
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span {
+    font-size: inherit;
+    line-height: 68px;
+}
+
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span::before,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span::before,
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span::after,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span::after {
+    border-top-color: transparent;
+}
+
+/* Focus */
+.pure-material-textfield-outlined > input:focus,
+.pure-material-textfield-outlined > textarea:focus {
+    border-color: rgba(var(--pure-material-primary-rgb, 0, 171, 85), 1);
+    border-top-color: transparent;
+    box-shadow: inset 1px 0 var(--pure-material-safari-helper1), inset -1px 0 var(--pure-material-safari-helper1), inset 0 -1px var(--pure-material-safari-helper1);
+    outline: none;
+}
+
+.pure-material-textfield-outlined > input:focus + span,
+.pure-material-textfield-outlined > textarea:focus + span {
+    color: rgba(var(--pure-material-primary-rgb, 0, 171, 85), 1);
+}
+
+.pure-material-textfield-outlined > input:focus + span::before,
+.pure-material-textfield-outlined > input:focus + span::after,
+.pure-material-textfield-outlined > textarea:focus + span::before,
+.pure-material-textfield-outlined > textarea:focus + span::after {
+    border-top-color: var(--pure-material-safari-helper1) !important;
+    box-shadow: inset 0 1px var(--pure-material-safari-helper1);
+}
+
+/* Disabled */
+.pure-material-textfield-outlined > input:disabled,
+.pure-material-textfield-outlined > input:disabled + span,
+.pure-material-textfield-outlined > textarea:disabled,
+.pure-material-textfield-outlined > textarea:disabled + span {
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+    border-top-color: transparent !important;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    pointer-events: none;
+}
+
+.pure-material-textfield-outlined > input:disabled + span::before,
+.pure-material-textfield-outlined > input:disabled + span::after,
+.pure-material-textfield-outlined > textarea:disabled + span::before,
+.pure-material-textfield-outlined > textarea:disabled + span::after {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+}
+
+.pure-material-textfield-outlined > input:disabled:placeholder-shown,
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+}
+
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span::before,
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span::after,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span::before,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span::after {
+    border-top-color: transparent !important;
+}
+
+/* Faster transition in Safari for less noticable fractional font-size issue */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .pure-material-textfield-outlined > input,
+        .pure-material-textfield-outlined > input + span,
+        .pure-material-textfield-outlined > textarea,
+        .pure-material-textfield-outlined > textarea + span,
+        .pure-material-textfield-outlined > input + span::before,
+        .pure-material-textfield-outlined > input + span::after,
+        .pure-material-textfield-outlined > textarea + span::before,
+        .pure-material-textfield-outlined > textarea + span::after {
+            transition-duration: 0.1s;
+        }
+    }
+}
+
+.webbee-button-outline-primary, .webbee-button-outline-secondary {
+    padding: 10px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    border-radius: 4px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.webbee-button-outline-primary .ripple{
+    border-radius: 50%;
+    background-color: rgba(0, 171, 85, 0.5);
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.5s linear;
+}
+
+.webbee-button-outline-secondary .ripple{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.5s linear;
+}
+
+.webbee-button-outline-primary:hover {
+    background-color: rgba(0, 171, 85, 0.04);
+}
+
+.webbee-button-outline-secondary:hover {
+    background-color: rgba(0, 171, 85, 0.04);
+}

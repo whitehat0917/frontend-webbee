@@ -1,0 +1,104 @@
+.consulting-hero {
+    .consulting-hero-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .consulting-hero-content-snippet {
+            .consulting-hero-content-snippet-description {
+                text-align: left;
+                border-top: 1px solid color var(--foreground-primary-color);;
+            }
+            .consulting-hero-content-snippet-images {
+                display: flex;
+                justify-content: center;
+                img {
+                    max-width: 100px;
+                    margin-top: 16px;
+                    margin-right: 32px;
+                }
+            }
+        }
+    }
+}
+
+.consulting-seo-content-item {
+    text-align: left;
+}
+
+.consulting-platform {
+    .consulting-platform-snippet {
+        text-align: left;
+    }
+    .consulting-platform-content {
+        padding-bottom: 10px;
+        .feature-icon {
+            padding: 0px 2px;
+            background-color: yellow;
+            color: black;
+            border-radius: 50%;
+        }
+        .feature-name {
+            margin-left: 10px;
+        }
+    }
+    .consulting-platform-right-snippet {
+        text-align: left;
+    }
+}
+
+.consulting-working {
+    .consulting-working-content {
+        .consulting-working-content-snippet-title {
+            span {
+                padding: 5px 10px;
+                background-color: yellow;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+    .consulting-working-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.consulting-testimontial {
+    max-width: 1236px;
+    margin: 0 auto;
+    .testimontial-item {
+        .item-user {
+            display: flex;
+            justify-content: flex-start;
+            img {
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.consulting-team {
+    .consulting-team-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .team-member {
+            position: relative;
+            img {
+                width: 100%;
+                height: 320px;
+                border-radius: 8px;
+            }
+            .team-member-name-job {
+                text-align: left;
+                position: absolute;
+                bottom: -50px;
+                width: 80%;
+                left: 30px;
+                background-color: var(--background-primary-color);
+                border-radius: 8px;
+                padding: 10px;
+            }
+        }
+    }
+}

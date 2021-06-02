@@ -1,0 +1,142 @@
+a.button-primary {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    text-transform: none;
+    min-width: 64px;
+    padding: 8px 22px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(255, 255, 255);
+    background-color: #C2185B;
+    box-shadow: rgb(0 0 0 / 10%) 0px 12px 15px;
+}
+
+a.button-primary:hover {
+    background-color: rgb(136, 14, 79);
+}
+
+a.button-secondary {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    text-transform: none;
+    min-width: 64px;
+    padding: 7px 21px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 1px solid rgba(194, 24, 91, 0.5);
+    color: #C2185B;
+}
+
+a.button-secondary:hover {
+    background-color: rgba(194, 24, 91, 0.08);
+    border: 1px solid rgb(194, 24, 91);
+}
+
+a.button-secondary-sm {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 0.8125rem;
+    line-height: 1.75;
+    text-transform: none;
+    min-width: 64px;
+    padding: 3px 9px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 1px solid rgba(194, 24, 91, 0.5);
+    color: #C2185B;
+}
+
+a.button-secondary-sm:hover {
+    background-color: rgba(194, 24, 91, 0.08);
+    border: 1px solid rgb(194, 24, 91);
+}
+
+svg .svg-changed-color {
+    stroke: #C2185B;
+    fill:   #C2185B;
+}
+
+svg .svg-stroke-changed-color {
+    stroke: #C2185B;
+}
+
+button.theme-toggler {
+    color: #C2185B;
+}
+
+.background-changed-color {
+    background-color: #C2185B;
+}
+
+.border-changed-color {
+    border: 1px solid #C2185B;
+}
+
+.border-top-changed-color {
+    border-top: 1px solid #C2185B;
+}
+
+.border-bottom-changed-color {
+    border-bottom: 1px solid #C2185B;
+}
+
+.font-changed-color {
+    color: #C2185B;
+}
+
+.svg-wrapper-background-changed {
+    background-color: rgba(194, 24, 91, 0.1);
+}
+
+.yellow-colored {
+    color: rgb(255, 225, 2);
+}

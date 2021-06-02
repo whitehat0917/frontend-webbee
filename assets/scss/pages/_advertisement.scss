@@ -1,0 +1,268 @@
+.advertisement-hero {
+    padding-top: 128px;
+    width: 100%;
+    background-color: var(--background-secondary-color);
+    .advertisement-hero-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .advertisement-hero-content-left {
+            .advertisement-hero-left-snippet {
+                text-align: left;
+                .webbee-description-snippet-images {
+                    display: flex;
+                    flex-wrap: wrap;
+                    -webkit-box-pack: start;
+                    justify-content: flex-start;
+                    img {
+                        // filter: brightness(0) invert(0.7);
+                        max-width: 90px;
+                        margin-top: 16px;
+                        margin-right: 32px;
+                    }
+                }
+                @media only screen and (max-width: 576px) {
+                    a.button-primary {
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+        }
+        .advertisement-hero-content-right {
+            img {
+                border-radius: 16px;
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            max-width: 720px;
+        }
+    }
+}
+.advertisement-benefits {
+    max-width: 1236px;
+    margin: 0 auto;
+    .advertisement-benefits-item-icon-span-1 {
+        background-color: rgb(224, 242, 241);
+        color: rgb(0, 150, 136);
+        padding: 20px 18px;
+        border-radius: 4px;
+    }
+    .advertisement-benefits-item-icon-span-2 {
+        background-color: rgb(252, 228, 236);
+        color: rgb(233, 30, 99);
+        padding: 20px 18px;
+        border-radius: 4px;
+    }
+    .advertisement-benefits-item-icon-span-3 {
+        background-color: rgb(255, 248, 225);
+        color: rgb(255, 193, 7);
+        padding: 20px 18px;
+        border-radius: 4px;
+    }
+    @media only screen and (max-width: 992px) {
+        max-width: 720px;
+    }
+}
+.advertisement-case-study {
+    background-color: var(--background-secondary-color);
+    padding: 64px 16px;
+    margin: 0 17px;
+    border-radius: 6px;
+    max-width: 1236px;
+    margin: 0 auto;
+    position: relative;
+    .advertisement-case-left-snippet {
+        padding: 0 96px;
+        .advertisement-case-study-snippet-buttons {
+            margin: 0 auto;
+            display: flex;
+            text-align: left;
+            padding-top: 20px;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 30%;
+        z-index: 1;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        background-size: 18px 18px;
+        background-image: radial-gradient(rgb(51, 204, 112) 20%, transparent 20%);
+        opacity: 0.2;
+    }
+    @media only screen and (max-width: 992px) {
+        max-width: 720px;
+    }
+}
+
+.advertisement-platforms {
+    max-width: 1236px;
+    margin: 0 auto;
+    .advertisement-platforms-content {
+        padding-bottom: 0;
+        .advertisement-platforms-content-item {
+            box-shadow: rgba(140, 152, 164, 0.25) 0px 3px 6px 0px;
+            border-radius: 12px;
+            height: 100%;
+            padding: 20px;
+            h6 {
+                font-weight: 500;
+            }
+            .advertisement-platforms-snippet-buttons {
+                font-weight: 600;
+                font-size: 0.8125rem;
+                line-height: 1.75;
+            }
+        }
+        img, svg {
+            width: 90px;
+        }
+        .advertisement-platforms-snippet-buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        max-width: 720px;
+    }
+}
+
+.advertisement-pricing {
+    background-color: var(--background-secondary-color);
+    .advertisement-pricing-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .advertisement-pricing-content-context {
+            .advertisement-pricing-content-context-left {
+                background-color: var(--background-primary-color);
+                padding-top: 40px;
+                padding-left: 0;
+                padding-right: 0;
+                border-radius: 4px;
+                box-shadow: rgba(140, 152, 164, 0.25) 0px 3px 6px 0px;
+                ul.nav {
+                    display: flex;
+                    justify-content: center;
+                    li.nav-item {
+                        a {
+                            border-radius: 0;
+                            font-size: 0.875rem;
+                            text-transform: initial;
+                            color: rgba(0, 0, 0, 0.54);
+                            font-weight: normal;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        a .ripple{
+                            border-radius: 50%;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            position: absolute;
+                            transform: scale(0);
+                            animation: ripple 0.5s linear;
+                        }
+                        
+                        a:hover {
+                            background-color: rgba(0, 171, 85, 0.08);
+                            border: 1px solid rgb(0, 171, 85);
+                        }
+                        a.active {
+                            background-color: rgb(0, 171, 85);
+                            color: white;
+                        }
+                        &:first-child {
+                            a {
+                                border-top-left-radius: 4px;
+                                border-bottom-left-radius: 4px;
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                border-top-right-radius: 4px;
+                                border-bottom-right-radius: 4px;
+                            }
+                        }
+                    }
+                }
+                .advertisement-pricing-description-snippet {
+                    display: flex;
+                    justify-content: center;
+                    h6 {
+                        padding: 7px
+                    }
+                    .pricing-monthly {
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                    }
+                    .pricing-annual {
+                        border-top-left-radius: 4px;
+                        border-bottom-left-radius: 4px;
+                    }
+                }
+                .advertisement-platforms-snippet-buttons {
+                    padding: 0px 40px;
+                    .button {
+                        padding-bottom: 20px;
+                        span {
+                            width: 20px;
+                            height: 20px;
+                            background-color: rgb(249, 185, 52);
+                            border-radius: 50%;
+                            position: relative;
+                            color: white;
+                            svg {
+                                position: absolute;
+                                top: 5px;
+                                left: 4px;
+                            }
+                        }
+                        h6 {
+                            padding-left: 10px;
+                            margin-top: -2px;
+                        }
+                        display: flex;
+                    }
+                }
+                .advertisement-platforms-snippet-buttons-learn-more {
+                    border-top: 1px solid rgba(var(--border-color), 0.12);
+                    padding-top: 10px;
+                }
+            }
+            .advertisement-pricing-content-context-right {
+                margin-top: 70px;
+                padding-left: 0;
+                padding-right: 0;
+                .advertisement-pricing-right-snippet {
+                    padding: 20px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 10px;
+                    border-radius: 4px;
+                    color: white;
+                    p {
+                        color: white;
+                        padding: 0 20px;
+                    }
+                    div {
+                        a {
+                            color: white;
+                        }
+                    }
+                    .advertisement-pricing-content-context-right-buttons {
+                        border-top: 1px solid rgba(var(--border-color), 0.12);
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            max-width: 720px;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.crypto-hero {
+    padding-top: 100px;
+    .crypto-hero-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .crypto-hero-content-left {
+            .crypto-hero-content-left-header {
+                display: flex;
+                justify-content: flex-start;
+                .crypto-news {
+                    padding: 2px 8px;
+                    background-color: #F44336;
+                    margin-right: 20px;
+                    border-radius: 4px;
+                }
+            }
+        }
+        .crypto-hero-content-right {
+            a {
+                width: 100%;
+            }
+            .crypto-hero-content-right-rating {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .crypto-hero-brand {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 90px;
+            margin-top: 16px;
+            margin-right: 32px;
+            filter: brightness(0) invert(0.7);
+        }
+    }
+}
+
+.crypto-video {
+    .crypto-video-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .crypto-video-content-left {
+            text-align: center;
+            position: relative;
+            svg {
+                position: absolute;
+                left: calc(50% - 32px);
+                top: calc(50% - 32px);
+            }
+        }
+    }
+}
+.crypto-news-snippet {
+    text-align: left;
+}
+
+.crypto-team {
+    max-width: 1236px;
+    margin: 0 auto;
+    .crypto-team-snippet {
+        .crypto-team-member {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            img {
+                width: 120px;
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+            .member-name-job {
+                padding-top: 40px;
+                text-align: left;
+            }
+        }
+        .crypto-optimization-item-snippet {
+            text-align: left;
+            .crypto-optimization-item-snippet-buttons {
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+
+.crypto-roadmap {
+    .crypto-roadmap-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .crypto-roadmap-snippet {
+            .crypto-roadmap-snippet-buttons {
+                display: block;
+                .crypto-roadmap-line {
+                    padding: 0;
+                    .line-end  {
+                        justify-content: flex-end;
+                    }
+                    .crypto-roadmap-line-left {
+                        display: flex;
+                        padding: 0;
+                    }
+                    .crypto-roadmap-line-right {
+                        display: flex;
+                        padding: 0;
+                    }
+                    .crypto-roadmap-line-descoration {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        margin: 0 20px;
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.crypto-readmap {
+    .crypto-readmap-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        padding-top: 40px;
+        border-top: 1px solid var(--foreground-primary-color);;
+    }
+}

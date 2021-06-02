@@ -1,0 +1,89 @@
+footer {
+    width: 100%;
+    padding: 32px 16px;
+    border-top: 1px solid rgba(var(--border-color), 0.12);
+    .footer {
+        max-width: 1236px;
+        margin: 0px auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        .footer-nav {
+            padding-top: 16px;
+            padding-left: 16px;
+            box-sizing: border-box;
+            margin: 0px;
+            flex-basis: 100%;
+            -webkit-box-flex: 0;
+            flex-grow: 0;
+            max-width: 100%;
+            .footer-nav-content {
+                flex-direction: row;
+                display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 100%;
+                a.footer-logo-brand {
+                    display: flex;
+                    height: 24px;
+                    width: 35px;
+                }
+                .footer-nav-menu {
+                    display: flex;
+                    flex-wrap: wrap;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    .footer-nav-menu-item {
+                        margin-top: 8px;
+                        margin-right: 16px;
+                        a {
+                            margin: 0px;
+                            font-family: Inter, sans-serif;
+                            font-weight: 500;
+                            font-size: 0.875rem;
+                            line-height: 1.57;
+                            color: var(--foreground-primary-color);
+                            text-decoration: none;
+                        }
+                    }
+                    .footer-nav-purchase {
+                        margin-top: 8px;
+                    }
+                }
+                @media only screen and (max-width: 576px) {
+                    flex-direction: column;
+                }
+            }
+        }
+        .footer-copyright {
+            padding-top: 16px;
+            padding-left: 16px;
+            box-sizing: border-box;
+            margin: 0px;
+            flex-basis: 100%;
+            -webkit-box-flex: 0;
+            flex-grow: 0;
+            max-width: 100%;
+            .copyright-title {
+                margin: 0px 0px 0.35em;
+                font-family: Inter, sans-serif;
+                font-weight: 500;
+                font-size: 0.875rem;
+                line-height: 1.57;
+                text-align: center;
+                color: var(--foreground-secondary-color);
+            }
+            .copyright-content {
+                margin: 0px;
+                font-family: Inter, sans-serif;
+                font-weight: 400;
+                font-size: 0.75rem;
+                line-height: 1.66;
+                text-align: center;
+                color: var(--foreground-secondary-color);
+            }
+        }
+    }
+}

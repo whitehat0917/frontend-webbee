@@ -1,0 +1,37 @@
+.domain-hosting-check {
+    max-width: 1236px;
+    margin: 0 auto;
+    width: 100%;
+    border-top: 1px solid var(--foreground-primary-color);
+    div {
+        text-align: center;
+    }
+}
+
+.domain-hosting-hero-statistics {
+    max-width: 1236px;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 10px 40px 10px;
+    padding: 0 !important;
+    border-width: 3px !important;
+    .border-styled-item {
+        border-left: 1px solid var(--foreground-primary-color);
+        border-right: 1px solid var(--foreground-primary-color);
+    }
+}
+
+.learn-more-button {
+    text-align: center;
+    width: 100%;
+}
+
+.domain-hosting-pricing-content {
+    max-width: 1236px;
+    margin: 0 auto;
+    .domain-hosting-pricing-content-item {
+        display: flex;
+        justify-content: space-between;
+    }
+}

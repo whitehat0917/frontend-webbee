@@ -1,0 +1,39 @@
+.software-company-hero {
+    max-width: 1236px;
+    margin: 0 auto;
+    .software-company-hero-content {
+        text-align: center;
+        .software-company-hero-content-context-item {
+            text-align: left;
+            display: flex;
+        }
+    }
+}
+
+.software-company-about-numbers {
+    .software-company-about-numbers-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .software-company-about-numbers-content-statistics {
+            justify-content: center;
+        }
+        .software-company-about-numbers-content-video {
+            text-align: center;
+            position: relative;
+            svg {
+                position: absolute;
+                left: calc(50% - 32px);
+                top: calc(50% - 32px);
+            }
+        }
+    }
+    .software-company-about-numbers-content-features {
+        text-align: center;
+        h3 {
+            padding: 64px 16px;
+        }
+        .software-company-about-numbers-content-features-context-item {
+            text-align: left;
+        }
+    }
+}

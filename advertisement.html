@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Ferdinand Tugano" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+
+    <title>Webbee</title>
+
+    <!-- Icons for this template -->
+    <link
+      href="assets/fonts/font-awesome/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Stylesheet -->
+    <!-- build:css -->
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <link id="theme-color" href="assets/css/colors/green.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="webbee-nav">
+        <div class="webbee-nav-content">
+          <div class="navbar-left">
+            <div class="sidebar-toggler" id="nav-container">
+              <div class="bg" id="sidebar-bg" onclick="onCloseSidebarButton()"></div>
+              <button type="button" class="menu-mobile-trigger button-ripple" tabindex="0" onclick="onOpenSidebarButton()">
+                <span>
+                  <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+                </span>
+              </button>
+              <div id="nav-content" tabindex="0">
+                <div class="close-tab">
+                  <button type="button" class="close-sidebar-button button-ripple" onclick="onCloseSidebarButton()">
+                    <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="CloseIcon"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+                  </button>
+                </div>
+                <span class="section-title">Landing Pages</span>
+                <ul>
+                  <li class="row">
+                    <a href="advertisement.html" class="col-6 active">Advertisement</a>
+                    <a href="payment.html" class="col-6">Payment App</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Marketing</a>
+                    <a href="#0" class="col-6">Software Company</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Course</a>
+                    <a href="#0" class="col-6">Crypto Currency</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Design Agency</a>
+                    <a href="#0" class="col-6">Consulting</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Application</a>
+                    <a href="#0" class="col-6">Event</a>
+                  </li>
+                </ul>
+                <span class="section-title">Supporting Pages</span>
+                <ul>
+                  <li class="row">
+                    <a href="#0" class="col-6">About</a>
+                    <a href="#0" class="col-6">Services</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Contact</a>
+                    <a href="#0" class="col-6">Pricing</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Customers</a>
+                    <a href="#0" class="col-6">Hire Us</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">FAQ</a>
+                    <a href="#0" class="col-6">Privacy Policy</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Coming Soon</a>
+                    <a href="#0" class="col-6">Maintenance Mode</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Cover</a>
+                    <a href="#0" class="col-6">Not Found</a>
+                  </li>
+                </ul>
+                <span class="section-title">Auth Pages</span>
+                <ul>
+                  <li class="row">
+                    <a href="#0" class="col-6">Login</a>
+                    <a href="#0" class="col-6">Login Simple</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Sign Up</a>
+                    <a href="#0" class="col-6">Sign Up Simple</a>
+                  </li>
+                  <li class="row">
+                    <a href="#0" class="col-6">Forgot Password</a>
+                    <a href="#0" class="col-6">Forgot Password Simple</a>
+                  </li>
+                </ul>
+                <a href="/" class="button-secondary button-ripple" style="width: 100%; height: 36px;">Documentation</a>
+                <a href="/" class="button-primary button-ripple" style="margin-top: 8px; width: 100%; height: 36px;">Purchase now</a>
+              </div>
+            </div>
+            <a class="logo-brand" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 95 71">
+                <rect class="svg-changed-color" width="16.811" height="68.926" x="0.664" y="7.769" rx="8.406" transform="rotate(-25 .664 7.77)"></rect>
+                <rect class="svg-changed-color" width="16.811" height="68.926" x="28.665" y="7.769" rx="8.406" transform="rotate(-25 28.665 7.77)"></rect>
+                <rect class="svg-changed-color" width="16.811" height="16.81" x="78.769" y="0.664" rx="8.405" transform="rotate(25 78.77 .664)"></rect>
+              </svg>
+            </a>
+          </div>
+          <div class="navbar-right">
+            <!-- <div class="navbar-colors">
+              <div class="navbar-color green">
+                <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              </div>
+              <div class="navbar-color blue">
+              </div>
+              <div class="navbar-color purple">
+              </div>
+              <div class="navbar-color red">
+              </div>
+              <div class="navbar-color orange">
+              </div>
+            </div>
+            <div class="navbar-theme">
+              <button class="theme-toggler">
+                <span>
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </span>
+              </button>
+            </div> -->
+            <div class="navbar-menu navbar-home">
+              <a href="/">Home</a>
+            </div>
+            <div class="navbar-menu navbar-documentation">
+              <a href="">Documentation</a>
+            </div>
+            <div class="navbar-purchase">
+              <a href="/" class="button-primary button-ripple">Purchase now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <div class="advertisement-hero" style="padding-top: 50px;">
+        <div class="advertisement-hero-content row">
+          <div class="advertisement-hero-content-left col-lg-6" data-aos="fade-right">
+            <div class="webbee-description-snippet advertisement-hero-left-snippet">
+              <h2 class="webbee-description-snippet-title">The ad that manages itself</h2>
+              <p class="webbee-description-snippet-content">Automate all your ad management strategies for Facebook, Google and Snapchat Ads in a single interface.</p>
+              <p class="webbee-description-snippet-description" style="margin-top: 30px;">Join over 5000 subscribers for our newsletter</p>
+              <div class="webbee-description-snippet-buttons" style="align-items: center;">
+                <label class="pure-material-textfield-outlined" style="width: 100%;">
+                  <input placeholder=" ">
+                  <span>Enter your email</span>
+                </label>
+                <a href="/" class="button-primary button-ripple" style="margin-left: 10px; height: 55px; margin-top: -3px;">Subscribe</a>
+              </div>
+              <p class="webbee-description-snippet-description" style="margin-top: 30px;">Trusted by industry leading companies</p>
+              <div class="webbee-description-snippet-images">
+                <img src="assets/svg/airbnb-original.svg" alt="">
+                <img src="assets/svg/amazon-original.svg" alt="">
+                <img src="assets/svg/fitbit-original.svg" alt="">
+                <img src="assets/svg/netflix-original.svg" alt="">
+                <img src="assets/svg/google-original.svg" alt="">
+                <img src="assets/svg/paypal-original.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="advertisement-hero-content-right col-lg-6" 
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="100"
+              data-aos-offset="0" style="padding-top: 30px;">
+            <img src="assets/img/dashboard.png" width="100%" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="advertisement-benefits row">
+        <div class="webbee-description-snippet">
+          <p class="webbee-description-snippet-header yellow-colored">Benefits</p>
+          <h3 class="webbee-description-snippet-title">What our 37,500+ clients<br/>love about Webbee</h3>
+          <p class="webbee-description-snippet-content">We design & develop amazing websites and digital products for startups, companies and ourselves.</p>
+        </div>
+        <div class="advertisement-benefits-content row" data-aos="fade-up">
+          <div class="webbee-description-snippet col-lg-4">
+            <p class="webbee-description-snippet-header">
+              <span class="advertisement-benefits-item-icon-span-1">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+              </span>
+            </p>
+            <h6 class="webbee-description-snippet-title" style="font-weight: 500;">Automation</h6>
+            <p class="webbee-description-snippet-description">We help your business gain leverage and efficiency through automation using simple, yet powerful NoCode tools.</p>
+          </div>
+          <div class="webbee-description-snippet advertisement-hero-left-snippet col-lg-4">
+            <p class="webbee-description-snippet-header">
+              <span class="advertisement-benefits-item-icon-span-2">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              </span>
+            </p>
+            <h6 class="webbee-description-snippet-title" style="font-weight: 500;">Funnel Optimization</h6>
+            <p class="webbee-description-snippet-description">We help you optimize your website or mobile app flow to increase conversion rates and retention to drive growth.</p>
+          </div>
+          <div class="webbee-description-snippet advertisement-hero-left-snippet col-lg-4">
+            <p class="webbee-description-snippet-header">
+              <span class="advertisement-benefits-item-icon-span-3">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+              </span>
+            </p>
+            <h6 class="webbee-description-snippet-title" style="font-weight: 500;">Idea Creation</h6>
+            <p class="webbee-description-snippet-description">We meet with your team to know more about your project idea and goals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="advertisement-case-study">
+        <div class="webbee-description-snippet advertisement-case-left-snippet" data-aos="fade-up">
+          <p class="webbee-description-snippet-header yellow-colored">Case Study</p>
+          <h3 class="webbee-description-snippet-title">webbee</h3>
+          <h6 class="webbee-description-snippet-content">"In case you are starting a business or launching any product in the market, Using the availbale pages you can quickly get started in a day with your website(some coding experience also required). The desgin quality is polished very well, it looks very professional."</h6>
+          <div class="webbee-description-snippet-buttons advertisement-case-study-snippet-buttons">
+            <img src="assets/img/img2.jpg" alt="" style="margin-top: 4px;">
+            <div class="developer-name-role">
+              <h6 class="developer-name" style="font-size: 1rem; font-weight: 400;">
+                Jhon Anderson
+              </h6>
+              <p class="developer-role" style="font-size: 1rem;">
+                Senior Frontend Developer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advertisement-platforms row">
+        <div class="webbee-description-snippet advertisement-platforms-snippet">
+          <p class="webbee-description-snippet-header yellow-colored">Platforms</p>
+          <h3 class="webbee-description-snippet-title">All your loved platforms<br/>are now in one tool</h3>
+        </div>
+        <div class="advertisement-platforms-content row" data-aos="fade-up">
+          <div class="webbee-description-snippet col-lg-4">
+            <div class="advertisement-platforms-content-item">
+              <div class="webbee-description-snippet-header">
+                <img src="assets/svg/google-drive.svg" alt="">
+              </div>
+              <h6 class="webbee-description-snippet-title">Google Drive</h6>
+              <p class="webbee-description-snippet-description">Sync any file store to Google Drive for automated sharing with people outside the company.</p>
+              <div class="webbee-description-snippet-buttons advertisement-platforms-snippet-buttons">
+                <span class="font-changed-color">Learn More</span>
+              </div>
+            </div>
+          </div>
+          <div class="webbee-description-snippet col-lg-4">
+            <div class="advertisement-platforms-content-item">
+              <div class="webbee-description-snippet-header">
+                <span class="advertisement-platforms-content-item-google-ad-icon-wrapper" style="padding: 40px 5px; border-radius: 50%; color: white; background-color: rgb(189, 189, 189);">
+                  <svg fill="currentcolor" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="PersonIcon"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                </span>
+              </div>
+              <h6 class="webbee-description-snippet-title">Google Ad Manager</h6>
+              <p class="webbee-description-snippet-description">Easily manage and edit any Adwords campaign inline to improve ROI with constant review.</p>
+              <div class="webbee-description-snippet-buttons advertisement-platforms-snippet-buttons">
+                <span class="font-changed-color">Learn More</span>
+              </div>
+            </div>
+          </div>
+          <div class="webbee-description-snippet col-lg-4">
+            <div class="advertisement-platforms-content-item">
+              <div class="webbee-description-snippet-header">
+                <img src="assets/svg/atlassian.svg" alt="">
+              </div>
+              <h6 class="webbee-description-snippet-title">Atlassian</h6>
+              <p class="webbee-description-snippet-description">Keep your entire team in sync with development and easily manage tasks, goals, and deadlines.</p>
+              <div class="webbee-description-snippet-buttons advertisement-platforms-snippet-buttons">
+                <span class="font-changed-color">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advertisement-platforms-statistics row" style="padding-top: 0; padding-bottom: 0;" id="counters_1">
+          <div class="webbee-description-snippet col-lg-4">
+            <h3 class="webbee-description-snippet-title" style="display: flex; justify-content: center;"><div class="counter" data-TargetNum="300" data-Speed="1000"></div><span>+</span></h3>
+            <p class="webbee-description-snippet-content" style="font-size: 1rem; font-weight: 400;">300 + component compositions, which will help you to build any page easily.</p>
+          </div>
+          <div class="webbee-description-snippet col-lg-4">
+            <h3 class="webbee-description-snippet-title" style="display: flex; justify-content: center;"><div class="counter" data-TargetNum="45" data-Speed="1000"></div><span>+</span></h3>
+            <p class="webbee-description-snippet-content" style="font-size: 1rem; font-weight: 400;">45 + landing and supported pages to Build a professional website.</p>
+          </div>
+          <div class="webbee-description-snippet col-lg-4">
+            <h3 class="webbee-description-snippet-title" style="display: flex; justify-content: center;"><div class="counter" data-TargetNum="99" data-Speed="1000"></div><span>%</span></h3>
+            <p class="webbee-description-snippet-content" style="font-size: 1rem; font-weight: 400;">99% of our customers rated 5-star our themes over 5 years.</p>
+          </div>
+        </div>
+      </div>
+      <div class="advertisement-pricing">
+        <div class="advertisement-pricing-content row">
+          <div class="webbee-description-snippet advertisement-pricing-snippet">
+            <p class="webbee-description-snippet-header yellow-colored" style="text-align: center;">Pricing</p>
+            <h3 class="webbee-description-snippet-title">Pick the best plan based<br/>on your ad spend</h3>
+          </div>
+          <div class="advertisement-pricing-content-context row" style="padding-top: 0;">
+            <div class="advertisement-pricing-content-context-left col-lg-6" data-aos="fade-right">
+              <div class="webbee-description-snippet" style="margin-bottom: 10px;">
+                <ul class="nav nav-pills mb-3" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link border-changed-color button-ripple active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Annual</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border-changed-color button-ripple" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Monthly</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><h2>$240</h2></div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><h2>$29</h2></div>
+                </div>
+                <!-- <div class="webbee-description-snippet-header advertisement-pricing-description-snippet">
+                  <h6 class="background-changed-color pricing-annual" style="font-size: 0.875rem; text-transform: initial; color: white; font-weight: normal;">Annual</h6>
+                  <h6 class="border-changed-color pricing-monthly" style="font-size: 0.875rem; text-transform: initial; color: rgba(0, 0, 0, 0.54); font-weight: normal;">Monthly</h6>
+                </div> -->
+                <!-- <h2 class="webbee-description-snippet-title" style="font-weight: 600;">$240</h2> -->
+                <p class="webbee-description-snippet-description">6 month of technical support.<br/>Plus unlimited updates.</p>
+                <div class="webbee-description-snippet-buttons advertisement-platforms-snippet-buttons row">
+                  <div class="button col-sm-6">
+                    <span><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></span>
+                    <h6 style="font-weight: normal; font-size: 1rem;">All features</h6>
+                  </div>
+                  <div class="button col-sm-6">
+                    <span><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></span>
+                    <h6 style="font-weight: normal; font-size: 1rem;">Email support</h6>
+                  </div>
+                  <div class="button col-sm-6">
+                    <span><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></span>
+                    <h6 style="font-weight: normal; font-size: 1rem;">Google Ads</h6>
+                  </div>
+                  <div class="button col-sm-6">
+                    <span><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></span>
+                    <h6 style="font-weight: normal; font-size: 1rem;">SSO via Google</h6>
+                  </div>
+                  <div class="button col-sm-6">
+                    <span><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></span>
+                    <h6 style="font-weight: normal; font-size: 1rem;">API access</h6>
+                  </div>
+                  <div class="button col-sm-6">
+                    <span><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></span>
+                    <h6 style="font-weight: normal; font-size: 1rem;">Facebook Ads</h6>
+                  </div>
+                </div>
+                <div class="webbee-description-snippet-buttons advertisement-platforms-snippet-buttons-learn-more">
+                  <!-- <span class="font-changed-color" style="cursor: pointer;">Learn More</span> -->
+                  <button class="font-changed-color webbee-button-outline-primary button-ripple">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="advertisement-pricing-content-context-right col-lg-6" data-aos="fade-left" id="pricing-right">
+              <div class="webbee-description-snippet advertisement-pricing-right-snippet background-changed-color">
+                <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"></path></svg>
+                <h4 class="webbee-description-snippet-title" style="color: white;">Customized</h4>
+                <p class="webbee-description-snippet-description">
+                  Design a custom package for your business.<br/>
+                  Available for businesses with large payments volume or unique business models.
+                </p>
+                <div class="webbee-description-snippet-buttons advertisement-pricing-content-context-right-buttons">
+                  <!-- <a href="/">Contact Sales</a> -->
+                  <button class="background-changed-color webbee-button-outline-secondary button-ripple" style="color: white;">Contact Sales</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-nav">
+          <div class="footer-nav-content">
+            <a class="footer-logo-brand" href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 95 71">
+                <rect class="svg-changed-color" width="16.811" height="68.926" x="0.664" y="7.769" rx="8.406" transform="rotate(-25 .664 7.77)"></rect>
+                <rect class="svg-changed-color" width="16.811" height="68.926" x="28.665" y="7.769" rx="8.406" transform="rotate(-25 28.665 7.77)"></rect>
+                <rect class="svg-changed-color" width="16.811" height="16.81" x="78.769" y="0.664" rx="8.405" transform="rotate(25 78.77 .664)"></rect>
+              </svg>
+            </a>
+            <div class="footer-nav-menu">
+              <div class="footer-nav-menu-item home">
+                <a href="/">Home</a>
+              </div>
+              <div class="footer-nav-menu-item documentation">
+                <a href="/">Documentation</a>
+              </div>
+              <div class="footer-nav-purchase">
+                <a href="/" class="button-secondary-sm button-ripple">
+                  <span>Purchase now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <h6 class="copyright-title">© Webbee. 2021, Maccarian. All rights reserved</h6>
+          <p class="copyright-content">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/vendor/jquery.slim.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/multi-animated-counter.js"></script>
+    <!-- build:js -->
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+    <script src="assets/js/layout/header.js"></script>
+    <script src="assets/js/pages/advertisement.js"></script>
+    <script src="assets/js/general.js"></script>
+  </body>
+</html>

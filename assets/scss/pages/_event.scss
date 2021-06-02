@@ -1,0 +1,86 @@
+.event-hero {
+    background-image: url('../../assets/img/img25.jpg');
+    height: auto;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    .event-hero-content {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        .event-hero-content-context {
+            max-width: 1236px;
+            margin: 0 auto;
+        }
+    }
+    &:after {
+        position: absolute;
+        inset: 0px;
+        height: 100%;
+        width: 100%;
+        content: " ";
+        z-index: 1;
+        background-color: rgb(0, 147, 87);
+        background-attachment: fixed;
+        opacity: 0.7;
+    }
+}
+
+.event-statistics {
+    margin-top: 50px;
+}
+
+.event-join {
+    max-width: 1236px;
+    margin: 0 auto;
+    .event-join-content {
+        width: 50%;
+        margin: 0 auto;
+        .event-join-form {
+            margin: 0 auto;
+            div {
+                margin-bottom: 20px;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.event-agenda {
+    max-width: 1236px;
+    margin: 0 auto;
+    .event-agenda-snippet-content {
+        .agenda-item {
+            border: 1px solid var(--foreground-primary-color);
+            padding: 0;
+            margin-bottom: 20px;
+            .agenda-item-icon {
+                border-right: 1px solid var(--foreground-primary-color);
+                svg {
+                    margin-top: 40px;
+                }
+            }
+            .agenda-item-content {
+                .agenda-item-content-header {
+                    display: flex;
+                    justify-content: space-between;
+                    .agenda-item-content-device {
+                        padding: 3px 5px;
+                        background-color: rgb(244, 67, 54);
+                        border-radius: 5px;
+                    }
+                }
+                .agenda-item-content-button {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}

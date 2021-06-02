@@ -1,0 +1,24 @@
+.application-hero {
+    .application-hero-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .application-hero-content-img {
+            padding-top: 50px;
+            position: relative;
+            .application-hero-content-img-desktop {
+                width: 100%;
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                max-width: 700px;
+            }
+            .application-hero-content-img-mobile {
+                border-radius: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                max-width: 250px;
+                position: absolute;
+                bottom: 0;
+                right: 100px;
+            }
+        }
+    }
+}

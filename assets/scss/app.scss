@@ -1,0 +1,46 @@
+// Custom bootstrap variable overrides
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+@import url('https://rsms.me/inter/inter.css');
+
+@import "bootstrap_variable_overrides";
+
+// Bootstrap and its default variables
+@import "bootstrap/bootstrap";
+
+// Your style
+@import "variables";
+@import "mixins";
+@import "general";
+@import "layout";
+@import "module";
+
+//Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+@import "pages/advertisement";
+@import "pages/payment";
+@import "pages/marketing";
+@import "pages/software-company";
+@import "pages/course";
+@import "pages/crypto";
+@import "pages/design-agency";
+@import "pages/consulting";
+@import "pages/application";
+@import "pages/domain-hosting";
+@import "pages/travel";
+@import "pages/event";
+
+@import "pages/about";
+@import "pages/services";
+@import "pages/contact";
+@import "pages/pricing";
+@import "pages/customers";
+@import "pages/hire-us";
+@import "pages/faq";
+@import "pages/privacy";
+@import "pages/maintenance";
+@import "pages/cover";
+@import "pages/login-simple";

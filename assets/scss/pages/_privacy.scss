@@ -1,0 +1,12 @@
+.privacy-hero {
+    max-width: 1236px;
+    margin: 0 auto;
+    .privacy-hero-content {
+        .privacy-hero-content-right {
+            p {
+                border: 1px solid var(--foreground-primary-color);
+                padding: 20px;
+            }
+        }
+    }
+}

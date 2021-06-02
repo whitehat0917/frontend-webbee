@@ -1,0 +1,25 @@
+.customers-hero {
+    background-image: url('../../assets/img/img4.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    .customers-hero-content {
+        width: 40%;
+        padding: 100px;
+    }
+}
+
+.customers-hero-image {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+    img {
+        margin-right: 96px;
+        max-width: 110px;
+        filter: contrast(0);
+    }
+}

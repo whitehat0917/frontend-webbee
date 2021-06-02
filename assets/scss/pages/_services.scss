@@ -1,0 +1,36 @@
+.services-hero {
+    .services-hero-description {
+        width: 35%;
+        margin: 0 auto;
+    }
+}
+
+.services-do-content {
+    width: 100%;
+    margin: 0px auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 16px;
+    background-image: url('../../assets/img/img32.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .testimontial-item {
+        padding: 40px;
+        .item-user {
+            display: flex;
+            img {
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.services-do-content-button {
+    display: flex;
+    margin: 0 auto;
+    h6 {
+        margin-right: 20px;
+    }
+}
